@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="489px" height="225px" viewbox="0 0 489 225" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0 9.15205C153.518 -27.8209 334.51 56.383 299.637 98.9226C280.305 122.505 191.949 117.479 163.439 152.257C139.521 181.432 238.328 191.541 238.328 191.541L204.137 206.165C204.137 206.165 247.402 211.886 301.476 290" transform="matrix(-0.49999997 -0.86602545 -0.86602545 0.49999997 555.0105 264.6377)" id="Stroke-11" fill="none" fill-rule="evenodd" stroke="#E6D6FF" stroke-width="2" stroke-linejoin="bevel" />
+  <g id="Group-60" transform="matrix(-0.99254614 -0.12186935 -0.12186935 0.99254614 165.78784 51.42798)">
+    <path d="M154 0C154 0 77.0674 28.3105 0 30.7191L20.2433 51.5656L8.17727 93.1289L41.3525 73.3044" id="Stroke-52" fill="none" fill-rule="evenodd" stroke="#E6D6FF" stroke-width="2" stroke-linejoin="bevel" />
+    <path d="M0 18.2209L49.3203 0" transform="translate(20.37085 33.506348)" id="Stroke-54" fill="none" fill-rule="evenodd" stroke="#E6D6FF" stroke-width="2" stroke-linejoin="bevel" />
+    <path d="M123.804 0L0 61.724L33.4104 96.1657C61.9023 49.8928 123.804 0 123.804 0" transform="translate(30.022217 0.83447266)" id="Stroke-56" fill="none" fill-rule="evenodd" stroke="#E6D6FF" stroke-width="2" stroke-linejoin="bevel" />
+    <path d="M0 41.5031L22.2167 10.2846L43.281 0" transform="translate(7.5377197 52.03369)" id="Stroke-58" fill="none" fill-rule="evenodd" stroke="#E6D6FF" stroke-width="2" stroke-linejoin="bevel" />
+  </g>
+</svg>

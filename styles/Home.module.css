@@ -11,8 +11,6 @@
 
 .background{
   position: absolute;
-  background-image: url('../public/nnnoise.svg');
-  z-index: -9;
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.4;
@@ -30,15 +28,18 @@
 
 .header{
   position: relative;
+  font-family: 'Satoshi',  sans-serif;
+  font-weight: 600;
+  font-size: 27px;
 }
 .logo{
   position: absolute;
-  top: -1.3em;
-  left: 4em;
-  z-index: -8;
+  top: -0.4em;
+  left: 4.7em;
   background-color: transparent;
 }
 .navbar{
+  font-family: 'Satoshi',  sans-serif;
   display: flex;
   justify-content: center;
   gap:clamp(3rem, 2em, 40px);
@@ -61,6 +62,8 @@
 
 
 .intro_section{
+  display: flex;
+  flex-direction: column;
   width: 35%;
   padding: 0 0 0 5em;
 }
@@ -73,8 +76,10 @@
 }
 
 .span_sec1{
+  font-family: 'Satoshi', sans-serif;
+  font-size: 19px;
   position: absolute;
-  margin-top: -1em;
+  margin-top: -1.7em;
 }
 
 .small_sec1{
@@ -84,8 +89,6 @@
 }
 
 .btn_sec1{
-  
-  display: inline-block;
   outline: 0;
   width: 200px;
   margin-top: 43px;
@@ -109,12 +112,80 @@
 
 .btn_sec1:hover{
   color: #000;
+  font-weight: 600;
   background: rgb(255, 255, 255);
 }
 
 
 .btnSideText_sec1{
+  position: relative;
   font-size: 12px;
   font-weight: 100;
   font-family: 'Satoshi', sans-serif;
+  margin-left: 14em;
+  margin-top: -2.3em;
+}
+
+.svgarrow{
+  position: absolute;
+  top: -26px;
+  transform: rotate(45deg);
+}
+
+.img1_sec1{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: -15em;
+  margin-left: 38em;
+}
+.star{
+position: absolute;
+right: 8em;
+top: -3.4em;
+}
+
+
+
+/* section 2 */
+.three_columns_sec2{
+ display: flex;
+ margin-top: 7em;
+ font-family: 'Work Sans', sans-serif;
+}
+
+.col1_sec2, .col2_sec2, .col3_sec2{
+  position: relative;
+width: 33.3%;
+height: 30em;
+}
+
+.desc{
+  position: absolute;
+  font-size: 40px;
+  width: 50%;
+  margin-left: 3em;
+  top: 3em;
+  line-height: 44px;
+  letter-spacing: -2px;
+  font-weight: 600;
+  
+}
+.col1_sec2{
+  background-color: hsl(105, 58%, 47%);
+}
+
+.col2_sec2{
+  background-color: #fff;
+  width: 33.3%;
+}
+
+
+.col3_sec2{
+  background-color: #000;
+  color: rgb(121, 121, 121);
+  width: 33.3%;
+  background-image: url('../public/line.svg');
+  background-repeat: no-repeat;
+  background-position: -3em;
 }
