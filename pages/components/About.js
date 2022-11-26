@@ -40,6 +40,28 @@ export default function About(){
           className={styles.logo}
         />
       </header>
+
+      <div className={styles.CTA_section}>
+        <h2>About</h2>
+        <ul>
+            <li>About Us</li>
+            <li>FAQ</li>
+        </ul>
+      </div>
+      <div className={styles.CTA_section}>
+        <h2>Sponsor</h2>
+        <ul>
+            <li>Become a sponsor</li>
+            <li>Become a writer<small>coming soon</small></li>
+        </ul>
+      </div>
+      <div className={styles.CTA_section}>
+        <h2>Social</h2>
+        <ul>
+            <li>Twitter</li>
+            <li>Discord</li>
+        </ul>
+      </div>
         </div>
       </div>
 

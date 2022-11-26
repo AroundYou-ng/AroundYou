@@ -5,6 +5,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   font-family: 'satoshi', sans-serif;
   background-image: url(../public/nnnoise.svg);
 }

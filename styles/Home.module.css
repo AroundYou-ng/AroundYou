@@ -189,3 +189,48 @@ height: 30em;
   background-repeat: no-repeat;
   background-position: -3em;
 }
+
+
+
+
+@media screen and (max-width: 900px) {
+  .navbar{
+    font-size: 15px;
+    font-weight: 400;
+    gap: 1em;
+  }
+
+
+  .intro_section{
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .img1_sec1{
+ zoom: 0.8;
+   top: 20em;
+  justify-content: flex-end;
+  right: 3em;
+  }
+
+
+  .three_columns_sec2{
+    margin-top: 24em;
+    width: 100%;
+  }
+
+  .col1_sec2, .col2_sec2, .col3_sec2{
+    position: relative;
+  width: 100%;
+  height: 18em;
+  }
+  
+  .desc{
+  font-size: 23px;
+  margin: 0 auto;
+  margin-left: 1em;
+  line-height: 24px;
+  width: 50%;
+    
+  }
+}
