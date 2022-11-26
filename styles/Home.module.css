@@ -1,4 +1,22 @@
 
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;600;700&display=swap');
+
+.conatiner{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Satoshi', sans-serif;
+}
+
+.background{
+  position: absolute;
+  background-image: url('../public/nnnoise.svg');
+  z-index: -9;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.4;
+}
 
 
 
@@ -10,4 +28,93 @@
 
 /* NAVBAR  */
 
+.header{
+  position: relative;
+}
+.logo{
+  position: absolute;
+  top: -1.3em;
+  left: 4em;
+  z-index: -8;
+  background-color: transparent;
+}
+.navbar{
+  display: flex;
+  justify-content: center;
+  gap:clamp(3rem, 2em, 40px);
+  list-style: none;
+}
 
+.link{
+  text-decoration: none;
+  color: black;
+}
+
+.navbar_compo{
+
+}
+
+
+
+
+/* section 1 */
+
+
+.intro_section{
+  width: 35%;
+  padding: 0 0 0 5em;
+}
+.h1_sec1{
+  font-family: 'Satoshi', sans-serif;
+  line-height: -3em;
+  letter-spacing: -2px;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.span_sec1{
+  position: absolute;
+  margin-top: -1em;
+}
+
+.small_sec1{
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+}
+
+.btn_sec1{
+  
+  display: inline-block;
+  outline: 0;
+  width: 200px;
+  margin-top: 43px;
+  cursor: pointer;
+  border: 1px solid #000;
+  border-radius: 2px;
+  color: #fff;
+  background: #000;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  line-height: 28px;
+  padding: 14px 33px 12px;
+  text-align:center;
+  transition-duration: .15s;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  zoom: 0.8;
+}
+
+.btn_sec1:hover{
+  color: #000;
+  background: rgb(255, 255, 255);
+}
+
+
+.btnSideText_sec1{
+  font-size: 12px;
+  font-weight: 100;
+  font-family: 'Satoshi', sans-serif;
+}
