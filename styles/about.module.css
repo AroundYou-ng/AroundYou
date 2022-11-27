@@ -7,18 +7,19 @@
     flex-direction: row;
     background: #0f0f0f;
     padding: 120px 0;
-    background-image: url('../../public/messarrow.svg');
+    background-image: url('../public/messarrow.svg');
     background-repeat: no-repeat;
     background-position-x: 69em;
     background-position-y: 19em;
 }
 
 .footer1{
-    font-family: 'Satoshi', sans-serif;
-    color: rgb(148, 146, 146);
+    font-family: 'Space Grotesk', sans-serif;
+    color: rgb(196, 196, 196);
     position: relative;
-    background-image: url('../../public/line.svg');
+    background-image: url('../public/line.svg');
     background-repeat: no-repeat;
+    background-position: left;
 }
 
 
@@ -31,21 +32,25 @@
 
 .intro_header{
     font-size: 44px;
-    font-weight: 600;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    color: #7a7a7a;
 }
 
 .introHeader_desc{
-    margin-top: 3em;
+    font-family: 'Circular Spotify Text', sans-serif;
+    margin-top: 1.8em;
     font-size: 18px;
-    font-weight: 500;
-    width: 45%;
+    font-weight: 400;
+    color: #7a7a7a;
+    width: 50%;
     letter-spacing: 0.97px;
 }
 
 .form{
     display: flex;
     flex-direction: column;
-    font-family: 'Satoshi', sans-serif !important;
+    font-family: 'Work Sans', sans-serif;
     margin-left: -17em;
 }
 
@@ -81,7 +86,7 @@
     background: #000;
     font-size: 20px;
     font-weight: 600;
-    font-family: 'Satoshi', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     line-height: 28px;
     padding: 12px 20px;
     text-align:center;
@@ -104,14 +109,19 @@
    gap: 8em;
    background-color: #fff;
    padding: 120px 0;
-   background-image: url('../../public/nnnoise.svg');
+   background-image: url('../public/nnnoise.svg');
    
 }
 
+/* CTA  */
 
 .header{
     font-size: 38px;
     padding: 0 0 0 5em;
+}
+
+.CTA_section{
+    font-family: 'Circular Spotify Text', sans-serif;
 }
 
 .CTA_section > ul{
@@ -122,16 +132,34 @@
  letter-spacing: 0.9px;
 }
 
-.CTA_section > ul > li{
-    
+.comingsoon{
+    background-color: rgba(255, 0, 0, 0.295);
+    color: rgba(255, 0, 0, 0.24);
+    border-radius: 4px;
+    margin: 0.23em;
 }
 
 
-@media  screen and (max-width:900px) {
+
+@media screen and (min-width: 768px) {
+    .main{
+        width: 100%;
+        background-image: none;
+    }
+}
+
+
+/* all range mobiles  */
+@media  screen and (max-width:600px) {
 
     .main, .form{
         display: flex;
         flex-direction: column;
+    }
+
+    .main{
+        width: 500px;
+        background-image: none;
     }
     .intro_header{
         font-size: 33px;
@@ -154,17 +182,26 @@
 
 
     .footer3{
-     flex-direction: column;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 6em;
     }
 .header{
-     margin-left: -0.4em;
+     margin-left: -1.2em;
 }
 .CTA_section{
     text-align: center;
-    margin: -4em;
+    margin: -3em;
+    margin-left: 2em;
+    
 }
 .CTA_section > ul{
     text-align: center;
+    
 }    
 
 }
+
+
+/* Tablets  */

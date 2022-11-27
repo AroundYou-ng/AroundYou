@@ -6,7 +6,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .background{
@@ -28,18 +28,28 @@
 
 .header{
   position: relative;
-  font-family: 'Satoshi',  sans-serif;
-  font-weight: 600;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  letter-spacing: -1.9px;
   font-size: 27px;
 }
 .logo{
   position: absolute;
   top: -0.4em;
-  left: 4.7em;
+  left: 4.2em;
   background-color: transparent;
 }
+
+.logoline{
+  position: absolute;
+  top: 1.4em;
+  left: 0.5em;
+}
 .navbar{
-  font-family: 'Satoshi',  sans-serif;
+  font-family: 'Circular Spotify Text', sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  letter-spacing: 0.2px;
   display: flex;
   justify-content: center;
   gap:clamp(3rem, 2em, 40px);
@@ -68,23 +78,26 @@
   padding: 0 0 0 5em;
 }
 .h1_sec1{
-  font-family: 'Satoshi', sans-serif;
-  line-height: -3em;
-  letter-spacing: -2px;
-  font-size: 45px;
+  font-family: 'Space Grotesk', sans-serif;
+  line-height: -2em;
+  letter-spacing: -1px;
+  font-size: 48px;
   font-weight: 600;
 }
 
 .span_sec1{
-  font-family: 'Satoshi', sans-serif;
-  font-size: 19px;
+  font-family: 'Circular Spotify Text', sans-serif;
+  font-size: 23px;
+  letter-spacing: -1.5px;
+  color: rgb(78, 78, 78);
   position: absolute;
-  margin-top: -1.7em;
+  margin-top: -1.6em;
 }
 
 .small_sec1{
-  font-family: 'Satoshi', sans-serif;
-  font-weight: 300;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 100;
+  color: rgb(78, 78, 78);
   font-size: 11px;
 }
 
@@ -97,9 +110,9 @@
   border-radius: 2px;
   color: #fff;
   background: #000;
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0.8px;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-weight: 500;
   line-height: 28px;
   padding: 14px 33px 12px;
@@ -121,14 +134,16 @@
   position: relative;
   font-size: 12px;
   font-weight: 100;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   margin-left: 14em;
   margin-top: -2.3em;
+  color: rgb(78, 78, 78);
 }
 
 .svgarrow{
   position: absolute;
-  top: -26px;
+  top: -32px;
+  left: 16em;
   transform: rotate(45deg);
 }
 
@@ -136,7 +151,7 @@
   display: flex;
   justify-content: center;
   position: relative;
-  margin-top: -15em;
+  margin-top: -19em;
   margin-left: 38em;
 }
 .star{
@@ -151,7 +166,8 @@ top: -3.4em;
 .three_columns_sec2{
  display: flex;
  margin-top: 7em;
- font-family: 'Work Sans', sans-serif;
+ background-image: url('../public/sveyyline.svg');
+ font-family: 'Circular Spotify Text', sans-serif;
 }
 
 .col1_sec2, .col2_sec2, .col3_sec2{
@@ -173,13 +189,24 @@ height: 30em;
 }
 .col1_sec2{
   background-color: hsl(105, 58%, 47%);
+  background-image: url('../public/sveyyline.svg');
+  background-repeat: no-repeat;
+  
 }
 
 .col2_sec2{
   background-color: #fff;
+  background-image: url('../public/sveyyline.svg');
+  background-blend-mode: exclusion;
+  background-repeat: no-repeat;
+  
   width: 33.3%;
 }
-
+.columns_svgarrow{
+  margin-top:13em;
+  margin-left: 19em;
+  transform: rotate(79deg);
+}
 
 .col3_sec2{
   background-color: #000;
@@ -187,7 +214,6 @@ height: 30em;
   width: 33.3%;
   background-image: url('../public/line.svg');
   background-repeat: no-repeat;
-  background-position: -3em;
 }
 
 
@@ -205,10 +231,32 @@ height: 30em;
     width: 100%;
     flex-direction: column;
   }
+  
+  .span_sec1{
+    font-size: 20px;
+    width: 90%;
+    margin-top: -2em;
+  }
 
+  .svgarrow{
+    left: 14em;
+  }
+
+  .star{
+    position: absolute;
+    right: -4em;
+    top: -3.4em;
+    }
+
+    .logoline{
+      position: absolute;
+      zoom: 0.7;
+      top: 1.6em;
+      left: 0.5em;
+    }
   .img1_sec1{
  zoom: 0.8;
-   top: 20em;
+   top: 23em;
   justify-content: flex-end;
   right: 3em;
   }
@@ -216,7 +264,7 @@ height: 30em;
 
   .three_columns_sec2{
     margin-top: 24em;
-    width: 100%;
+    width: 500px;
   }
 
   .col1_sec2, .col2_sec2, .col3_sec2{
@@ -233,4 +281,16 @@ height: 30em;
   width: 50%;
     
   }
+
+
+
+}
+
+
+  /* Tablets  */
+
+  @media screen and (min-height: 1024px) {
+    .three_columns_sec2{
+        width: 100%;
+    }
 }

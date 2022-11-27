@@ -1,0 +1,133 @@
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+   font-family: 'Space Grotesk', sans-serif;
+}
+
+
+
+
+/* intro 1  */
+
+
+.intro_h1{
+    position: relative;
+    margin: auto;
+    margin-top: 3em;
+    font-size: 48px;
+    font-weight: 600;
+   
+}
+
+
+
+.intro_h1_img{
+    position: absolute;
+    top: -1.2em;
+    left: 4em;
+    transform: rotate(42deg);
+}
+
+
+
+/* intro 2 */
+
+.intro2_h1{
+    position: relative;
+    margin: auto;
+    margin-bottom: 3em;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.logoline{
+    position: absolute;
+    top: 1.4em;
+    left:  25%;
+}
+
+
+
+
+/* contents dia  */
+
+.star{
+    position: absolute;
+    top: 6em;
+}
+.star{
+    position: absolute;
+    top: 6em;
+}
+
+.contents_diagonal{
+ position: relative;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: center;
+ margin-top: 20em;
+ font-family: 'Circular Spotify Text', sans-serif;
+ font-size: 15px;
+ font-weight: 300;
+}
+
+
+.contents_diagonal1{
+  position: absolute;
+  top: -17em;
+  right: 0;
+  padding: 0 8em 0 0;
+  width: 30%;
+  letter-spacing: 0.4px;
+  color: rgb(44, 44, 44);
+}
+
+.contents_diagonal2{
+    position: absolute;
+    top: -6em;
+    left: 0;
+    padding: 0  0 0 8em;
+    width: 30%;
+    letter-spacing: 0.4px;
+    color: rgb(44, 44, 44);
+}
+
+@media screen and (max-width:640px) {
+    .contents_diagonal1, .contents_diagonal2{
+        width: 70%;
+        font-size: 14px;
+    }
+
+    .contents_diagonal1{
+        margin-left: 25%;
+        margin-top: -3em;
+    }
+    .contents_diagonal2{
+       right: 0;
+       margin-left: 25%;
+       margin-top: 1em;
+    }
+
+    .circle{
+        position: absolute;
+        top: 1em;
+        right: 22em;
+        zoom: 0.7;
+    }
+
+    .intro2_h1{
+        left: 1em;
+    }
+}
+
+
+
+
+
+
+
+
+

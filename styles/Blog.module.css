@@ -1,0 +1,39 @@
+
+
+.main{
+    font-family: 'Circular Spotify Text', sans-serif !important;
+
+}
+
+
+
+.mainHeader{
+    display: flex;
+    justify-content: center;
+    font-size: 84px;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+}
+
+/* blog post  */
+
+.conatiner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 65px;
+    grid-row-gap: 35px;
+    margin: auto;
+}
+
+.b{
+    color: hsl(105, 58%, 47%);
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .conatiner{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

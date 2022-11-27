@@ -1,14 +1,14 @@
-import styles from "./about.module.css";
-import profilePic from "../../public/images.png";
+import styles from "../styles/about.module.css";
+import profilePic from "../public/images.png";
 import Image from "next/image";
-// pages\components\About.js
+
 
 export default function About(){
     return(
         <div className={styles.CTA}>
 
         <footer className={styles.main}>
-        <div className={styles.footer1}>
+        <div className={styles.footer1} data-aos="top-top">
             <div className={styles.wrapper1_footer1}>
             <span className={styles.intro_header}>
             We will write you a letter!
@@ -20,7 +20,7 @@ export default function About(){
         </div>
         <div className={styles.footer2}>
             <form className={styles.form}>
-                <input className={styles.name_form} type="name" maxlength="16" />
+                <input className={styles.name_form} type="name" maxLength="32" />
                 <br />
                 <input className={styles.email_form} type="email" />
                 <br />
@@ -52,7 +52,7 @@ export default function About(){
         <h2>Sponsor</h2>
         <ul>
             <li>Become a sponsor</li>
-            <li>Become a writer<small>coming soon</small></li>
+            <li>Become a writer<small className={styles.comingsoon}>coming soon</small></li>
         </ul>
       </div>
       <div className={styles.CTA_section}>
