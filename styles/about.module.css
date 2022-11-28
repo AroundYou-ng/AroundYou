@@ -127,7 +127,7 @@
 .CTA_section > ul{
  list-style: none;
  text-align: justify;
- margin-left: -2.3em;
+ margin-left: 0.1em;
  font-weight: 100;
  letter-spacing: 0.9px;
 }
@@ -182,10 +182,9 @@
 
 
     .footer3{
-     flex-direction: row;
-     flex-wrap: wrap;
+     flex-direction: column;
      justify-content: center;
-     gap: 6em;
+     gap: 7em;
     }
 .header{
      margin-left: -1.2em;

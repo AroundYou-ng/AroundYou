@@ -65,15 +65,19 @@ export default function Home() {
 
       <div className={styles.three_columns_sec2}>
         <div className={styles.col1_sec2}>
-          <span className={styles.desc} data-aos="zoom-in-up">1. Read rising matter concerning our environment</span>
+          <span className={styles.desc} data-aos="zoom-in-up">1. Read rising matter concerning our environment
+          </span>
+          
         </div>
         <div className={styles.col2_sec2}>
-        <span className={styles.desc} data-aos="zoom-in-up">2. Identify issues and help solve them</span>
+        <span className={styles.desc} data-aos="zoom-in-up">2. Identify issues and help solve them
+        </span>
     
         </div>
         <div className={styles.col3_sec2}>
 
-        <span className={styles.desc} data-aos="zoom-in-up">3. Be apart of this wonder community</span>
+        <span className={styles.desc} data-aos="zoom-in-up">3. Be apart of this wonder community
+        </span>
         </div>
       </div>
 

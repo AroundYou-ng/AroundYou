@@ -19,10 +19,19 @@
 
 .conatiner{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 65px;
-    grid-row-gap: 35px;
+    grid-column-gap: 45px;
+    grid-row-gap: 66px;
+    padding-bottom: 3em;
+}
+
+.circle, .star{
+    position: absolute;
+    
+}
+
+.conatiner div{
     margin: auto;
 }
 
@@ -34,6 +43,6 @@
 
 @media screen and (max-width: 900px) {
     .conatiner{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }

@@ -79,10 +79,12 @@
 }
 .h1_sec1{
   font-family: 'Space Grotesk', sans-serif;
-  line-height: -2em;
-  letter-spacing: -1px;
+  line-height: 1.2em;
+  letter-spacing: -2px;
   font-size: 48px;
   font-weight: 600;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
 }
 
 .span_sec1{
@@ -91,7 +93,7 @@
   letter-spacing: -1.5px;
   color: rgb(78, 78, 78);
   position: absolute;
-  margin-top: -1.6em;
+  margin-top: -1.0em;
 }
 
 .small_sec1{
@@ -104,7 +106,7 @@
 .btn_sec1{
   outline: 0;
   width: 200px;
-  margin-top: 43px;
+  margin-top: 21px;
   cursor: pointer;
   border: 1px solid #000;
   border-radius: 2px;
@@ -151,7 +153,7 @@
   display: flex;
   justify-content: center;
   position: relative;
-  margin-top: -19em;
+  margin-top: -17em;
   margin-left: 38em;
 }
 .star{
@@ -216,7 +218,9 @@ height: 30em;
   background-repeat: no-repeat;
 }
 
-
+.verifiedBage{
+  margin-left: auto;
+}
 
 
 @media screen and (max-width: 900px) {
