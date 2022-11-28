@@ -49,6 +49,7 @@
   font-family: 'Circular Spotify Text', sans-serif;
   font-weight: 400;
   font-size: 19px;
+  margin-top: 2rem;
   letter-spacing: 0.2px;
   display: flex;
   justify-content: center;
@@ -61,8 +62,26 @@
   color: black;
 }
 
-.navbar_compo{
 
+.navbar_compo{
+  background-image:
+  linear-gradient(
+    transparent 0%,
+    transparent 90%,
+    green 90%,
+    green 100%
+  );
+
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  background-position-x: right;
+
+
+  transition: background-size 300ms;
+}
+.navbar_compo:hover{
+background-size: 100% 100%;
+background-position-x: left;
 }
 
 
