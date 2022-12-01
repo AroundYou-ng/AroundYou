@@ -1,9 +1,22 @@
 import styles from "../styles/about.module.css";
 import profilePic from "../public/images.png";
 import Image from "next/image";
+import { useState, useEffect } from 'react';
 
 
 export default function About(){
+
+  const [username, setUsername] = useState([]);
+  const [email, setEmail] = useState([]);
+ 
+  useEffect(() => {
+    console.log(username);
+    console.log(email);
+  }, [username, email]);
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+  }
     return(
         <div className={styles.CTA}>
 
@@ -19,10 +32,12 @@ export default function About(){
             </div>
         </div>
         <div className={styles.footer2}>
-            <form className={styles.form}>
-                <input className={styles.name_form} type="name" maxLength="32" />
+            <form className={styles.form}  onSubmit={handleSubmit}>
+                <input className={styles.name_form} type="name" maxLength="32" 
+                   onChange={(e) => setUsername({ ...username, name: e.target.value })} />
                 <br />
-                <input className={styles.email_form} type="email" />
+                <input className={styles.email_form} type="email" 
+                 onChange={(e) => setEmail({ ...email, email: e.target.value })}/>
                 <br />
                 <button type="submit" className={styles.button}>Send</button>
             </form>

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sanity/image-url": "^1.0.1",
     "animate.css": "^4.1.1",
     "aos": "^3.0.0-beta.6",
     "eslint": "8.28.0",
