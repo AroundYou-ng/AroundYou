@@ -9,8 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@mdx-js/loader": "^1.5.1",
-    "@mdx/react": "^1.6.18",
+    "@mdx-js/react": "^2.1.5",
     "animate.css": "^4.1.1",
     "aos": "^3.0.0-beta.6",
     "date-fns": "^2.29.3",
