@@ -2,6 +2,8 @@ import '../styles/globals.css'
 import AOS from 'aos';
 import { useEffect } from 'react'
 import 'aos/dist/aos.css';
+import MDXcompo from '../components/MDXcompo';
+import { MDXProvider } from '@mdx-js/react';
 
 
 function MyApp({ Component, pageProps }) {
@@ -11,7 +13,11 @@ function MyApp({ Component, pageProps }) {
       duration: 500,
     });
    });
-  return <Component {...pageProps} />
+  return (
+    <MDXProvider components={MDXcompo}>
+  <Component {...pageProps} />
+  </MDXProvider>
+  )
 }
 
 export default MyApp
