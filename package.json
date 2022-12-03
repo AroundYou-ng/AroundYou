@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mdx-js/loader": "^1.5.1",
+    "@mdx/react": "^1.6.18",
     "animate.css": "^4.1.1",
     "aos": "^3.0.0-beta.6",
     "date-fns": "^2.29.3",
@@ -17,7 +19,7 @@
     "next": "13.0.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typed.js": "^2.0.12",
+    "typed.js": "^2.0.12"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
