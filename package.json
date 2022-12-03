@@ -9,9 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@sanity/block-content-to-react": "^3.0.0",
-    "@sanity/client": "^3.4.1",
-    "@sanity/image-url": "^1.0.1",
     "animate.css": "^4.1.1",
     "aos": "^3.0.0-beta.6",
     "date-fns": "^2.29.3",
@@ -21,7 +18,6 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typed.js": "^2.0.12",
-    "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
