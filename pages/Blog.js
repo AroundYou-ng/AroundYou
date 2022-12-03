@@ -6,10 +6,8 @@ import About from "../components/About"
 import Header from  '../components/Header'
 
 
-
-
-
 export default function Blog(){
+   
     return (
       <div className={styles.main}>
         <Header />
@@ -76,7 +74,9 @@ export default function Blog(){
    
 
         </div>
-        <About />
+
+        
+        <About  />
       </div>
     );
 }

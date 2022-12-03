@@ -57,6 +57,7 @@
 
 .name_form, .email_form{
     border: 3px solid #000;
+    font-family: 'Circular Spotify Text', sans-serif;
     border-radius: 1px;
     height: 50px;
     line-height: normal;
@@ -146,8 +147,19 @@
     border-radius: 4px;
     margin: 0.23em;
 }
+/* 
+@media (prefers-color-scheme: dark){
 
+    .footer3:not(.CTA){
+    color: rgb(158, 158, 158) !important;
+    background-image: url(../public/nnnoiseDark.svg) ;
+  
+    }
 
+.intro_header,.introHeader_desc, .wrapper1_footer1, .footer1, .footer2,.name_form, .email_form{background-image: none !important;
+
+    }
+  } */
 
 @media screen and (min-width: 768px) {
     .main{

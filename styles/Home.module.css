@@ -237,9 +237,20 @@ height: 30em;
   background-repeat: no-repeat;
 }
 
-.verifiedBage{
-  margin-left: auto;
+
+
+@media (prefers-color-scheme: dark){
+
+  .desc{
+  color: rgb(0, 0, 0) !important;
+  background-image: none;
+  }
+
+  .col3_sec2 > .desc{
+    color: #fff !important;
+  }
 }
+
 
 
 @media screen and (max-width: 900px) {

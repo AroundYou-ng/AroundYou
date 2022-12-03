@@ -12,3 +12,16 @@ body {
   font-family: 'Space Grotesk', sans-serif;
   background-image: url(../public/nnnoise.svg);
 }
+
+
+
+
+
+/* @media (prefers-color-scheme: dark){
+
+  *,html,body{
+  color: rgb(158, 158, 158) !important;
+  background-image: url(../public/nnnoiseDark.svg);
+
+  }
+} */

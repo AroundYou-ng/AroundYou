@@ -10,8 +10,9 @@ export default function About(){
   const [email, setEmail] = useState([]);
  
   useEffect(() => {
-    console.log(username);
-    console.log(email);
+ 
+
+  //  localStorage.setItem("username", `${username.name}`)
   }, [username, email]);
 
   const handleSubmit = (e) => {
