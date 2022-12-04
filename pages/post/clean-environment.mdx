@@ -3,12 +3,29 @@ title: The benefits of a clean environment
 author: Aaron Chris
 description: Cleanliness, environment upkeep, healthy ecosystem
 ---
+import About from "../../components/About.js";
+import Header from "../../components/Header.js";
+import Body from "../../components/MDXbody.js";
+import Head from "next/head";
+import Image from "next/image";
+import star from "../../public/ssstar.svg";
+import styles from "../../styles/MDX.module.css"
+import hairystar from "../../public/hairystar.svg"
 
+<Header />
 
-# The benefits of a clean environment!
+# {title}
 
+<Image
+data-aos="slide-right"
+className={styles.imgBlog} 
+src="https://images.pexels.com/photos/7512869/pexels-photo-7512869.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+alt="clean environment picture"
+width={700}
+height={500} />
 
 There are so many ways in which we can make our environment clean. One thing we need to consider is that our homes, office and even school have different kinds of cleaning requirements. For example, you might have a specific room that requires more attention. There are various options available for the care of your home or workplace, and you need to choose the best option because it will help you get rid of most of the messes and stink in your house/office.
+
 
 One of the biggest benefits of a clean environment is that it helps us all be more productive. We spend more time working and less time cleaning, which means we can do more work in less time.
 
@@ -29,3 +46,6 @@ Another way to protect the environment is to recycle as much as possible. Recycl
 # Conclusion
 
 If you find the environment around you polluted or noisy, it may annoy you. But, if you take a step back and think about the good things that may come from such pollution or noise, you'll realize that, indeed, there are many benefits to a less-than-clean environment.
+
+
+<About />

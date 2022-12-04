@@ -5,8 +5,26 @@ description: green energy, solar energy, renewable energy, solar power, solar pa
 ---
 
 
-# A Girl-Minded Take On Solar Energy & The Undeniable Benefits Of Green Energy
+import About from "../../components/About.js";
+import Header from "../../components/Header.js";
+import Body from "../../components/MDXbody.js";
+import Head from "next/head";
+import Image from "next/image";
+import star from "../../public/ssstar.svg";
+import styles from "../../styles/MDX.module.css"
+import hairystar from "../../public/hairystar.svg"
 
+<Header />
+
+# {title}
+
+
+
+<Image src="https://images.pexels.com/photos/7425355/pexels-photo-7425355.jpeg"
+width={700}
+className={styles.imgBlog} 
+height={500}
+/>
 Green World is a new way of thinking about the world around you.
 
 It's a way of looking at things that can make your life better, easier, and more sustainable. It's not just about the planet—it's also about yourself and your family.
@@ -44,3 +62,7 @@ If you're interested in learning more about solar energy, or if you want to get 
 # Conclusion
 
 Solar energy is the future. It's clean, renewable, and can be harnessed for a variety of uses. As we discover more ways to integrate solar panels within our daily lives, expect more exciting discoveries on how solar energy affects green movements in America. After all, it's a win-win for everyone involved.
+
+
+
+<About />
