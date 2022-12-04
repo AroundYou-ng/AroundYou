@@ -27,13 +27,13 @@ export default function Header(){
           <Link className={styles.link} href="/">
             <li className={styles.navbar_compo}>Home</li>
           </Link>
-          <Link className={styles.link} href="Blog">
+          <Link className={styles.link} href="/Blog">
             <li className={styles.navbar_compo}>Blog</li>
           </Link>
-          <Link className={styles.link} href="AboutMission">
+          <Link className={styles.link} href="/AboutMission">
             <li className={styles.navbar_compo}>About Us/Our Mission</li>
           </Link>
-          <Link className={styles.link} href="Talk">
+          <Link className={styles.link} href="/Talk">
             <li className={styles.navbar_compo}>Talk to Us</li>
           </Link>
         </ul>

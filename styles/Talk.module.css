@@ -105,6 +105,34 @@
 
 
 
+@media screen and (max-width: 900px) {
+
+    .intro_h1, .intro_h2, .contactUs{
+     display: flex;
+     justify-content: center;
+     margin-left: 2em;
+     width: 100%;
+    }
+
+    .intro_h1{
+        margin-top: 1em;
+        margin-left: 2em;
+    }
+
+    .formGrid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        width: 100%;
+        margin-left: 4em;
+    }
+
+    .formGrid >  input::placeholder{
+         font-size: 12px;
+    }
+    
+}
+
+
 @media (prefers-color-scheme: dark){
     .formGrid > input{
         background-image: none !important;
