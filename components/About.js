@@ -1,23 +1,83 @@
 import styles from "../styles/about.module.css";
 import profilePic from "../public/images.png";
 import Image from "next/image";
-import { useState, useEffect } from 'react';
+import Link from 'next/link'
+import { collection, addDoc, query, onSnapshot, orderBy } from "firebase/firestore";
+import {db} from '../pages/firebase';
+import { v1 as uuidv1 } from "uuid";
+import { useState, useEffect } from "react";
+import swal from "sweetalert";
 
 
 export default function About(){
 
-  const [username, setUsername] = useState([]);
-  const [email, setEmail] = useState([]);
- 
-  useEffect(() => {
- 
+  const [username, setUsername] = useState({});
+  const [email, setEmail] = useState({});
 
-  //  localStorage.setItem("username", `${username.name}`)
-  }, [username, email]);
+
+  async function getEmail(){
+    const emailUserQuery = query(
+      collection(db, "emails"),
+      orderBy("email", "asc")
+    )
+
+    onSnapshot(emailUserQuery, (QuerySnapshot) => {
+      QuerySnapshot.forEach((snap) => {
+
+      })
+    })
+  }
+ 
+  const [emails, setEmails] = useState([]);
+  useEffect(() => {
+    getEmail();
+  }, []);
+
+  useEffect(() => {
+    console.log(emails);
+  }, [emails]);
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-  }
+    e.preventDefault();
+    // Adding info to database
+
+    const userRef = db.collection("newsletter");
+    const setUser = userRef.doc(email.email);
+    setUser.get().then((doc) => {
+      if (doc.exists) {
+        swal({
+          title: "User already Exist",
+          text: "Try using another email",
+          timer: 6000,
+          confirmButtonColor: "#DF6B55",
+          icon: "info",
+        });
+      } else {
+        userRef
+          .doc(email.email)
+          .set({
+            name: username,
+            email: email,
+            id: uuidv1(),
+          })
+          .then(() => {
+            swal({
+              title: "Good job!",
+              text: "You've subscribed to our newsletter🥳",
+              timer: 6000,
+              icon: "success",
+            });
+          
+            const timer = setTimeout(() => {
+              window.location.reload(false);
+            }, 3000);
+          })
+          .catch((error) => {
+            alert(error.message);
+          });
+      }
+    });
+  };
     return(
         <div className={styles.CTA}>
 
@@ -60,7 +120,7 @@ export default function About(){
       <div className={styles.CTA_section}>
         <h2>About</h2>
         <ul>
-            <li>About Us</li>
+           <Link href="/AboutMission"><li>About Us</li></Link>
             <li>FAQ</li>
         </ul>
       </div>

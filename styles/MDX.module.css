@@ -4,6 +4,7 @@
     font-size: 45px;
     font-weight: 700;
     margin-bottom: 1.4em;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .h2{
@@ -14,8 +15,7 @@
 .h3 {
     display: flex;
     justify-content: center;
-   
-    font-family: 'Circular Spotify Text', sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .h3{

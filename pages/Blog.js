@@ -2,12 +2,16 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Blog.module.css";
 import star from "../public/ssstar.svg";
+import Head from "next/head";
 import About from "../components/About";
 import Header from "../components/Header";
 
 export default function Blog() {
   return (
     <div className={styles.main}>
+      <Head>
+        <title>Blog Post</title>
+      </Head>
       <Header />
       <div className={styles.mainHeader}>
         Blog <b className={styles.b}>Posts</b>
@@ -44,7 +48,7 @@ export default function Blog() {
             </h5>
           </a>
           <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          Healthy work environment, business, environmental issues.
+            Healthy work environment, business, environmental issues.
           </p>
           <Link
             href="/post/ecosystem"
@@ -79,11 +83,11 @@ export default function Blog() {
         >
           <a href="#">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            The benefits of a clean environment
+              The benefits of a clean environment
             </h5>
           </a>
           <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          Cleanliness, environment upkeep, healthy ecosystem
+            Cleanliness, environment upkeep, healthy ecosystem
           </p>
           <a
             href="/post/clean-environment"
@@ -112,11 +116,14 @@ export default function Blog() {
         >
           <a href="#">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            A Girl-Minded Take On Solar Energy & The Undeniable Benefits Of Green Energy
+              A Girl-Minded Take On Solar Energy & The Undeniable Benefits Of
+              Green Energy
             </h5>
           </a>
           <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          green energy, solar energy, renewable energy, solar power, solar panel, green products, eco friendly products, renewable resources, sustainable products
+            green energy, solar energy, renewable energy, solar power, solar
+            panel, green products, eco friendly products, renewable resources,
+            sustainable products
           </p>
           <a
             href="/post/green-world-solar-energy"
@@ -145,11 +152,11 @@ export default function Blog() {
         >
           <a href="#">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            Positive mindset and mental health environment
+              Positive mindset and mental health environment
             </h5>
           </a>
           <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          Cleanliness, environment upkeep, healthy ecosystem
+            Cleanliness, environment upkeep, healthy ecosystem
           </p>
           <a
             href="/post/mental-health-positive-mindset"
