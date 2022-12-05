@@ -143,6 +143,15 @@
 }
 
 
+@media (prefers-color-scheme: dark){
+        .contents_diagonal1, .contents_diagonal2{
+            color: rgb(133, 133, 133);
+        }
+    
+  }
+  
+
+
 
 
 

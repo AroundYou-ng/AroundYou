@@ -147,7 +147,7 @@
     border-radius: 4px;
     margin: 0.23em;
 }
-/* @media (prefers-color-scheme: dark){
+@media (prefers-color-scheme: dark){
 
     .footer3:not(.CTA){
     color: rgb(158, 158, 158) !important;
@@ -155,10 +155,11 @@
   
     }
 
-.intro_header,.introHeader_desc, .wrapper1_footer1, .footer1, .footer2,.name_form, .email_form{background-image: none !important;
+.intro_header,.introHeader_desc, .wrapper1_footer1, .footer1, .footer2,.name_form, .email_form{
+    background-image: none !important;
 
     }
-  }  */
+  } 
 
 @media screen and (min-width: 768px) {
     .main{

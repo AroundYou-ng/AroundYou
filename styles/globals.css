@@ -4,10 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  --primaryBackgroundColor: white;
+  --primaryTextColor: black;
+}
+
 html,
 body {
   scroll-behavior: smooth;
-  padding: 0;
+  padding: 0; 
   margin: 0;
   box-sizing: border-box;
   font-family: 'Space Grotesk', sans-serif;
@@ -17,7 +22,7 @@ body {
 
 
 
-/* 
+
 @media (prefers-color-scheme: dark){
 
   *,html,body{
@@ -25,4 +30,4 @@ body {
   background-image: url(../public/nnnoiseDark.svg);
 
   }
-}  */
+}  

@@ -34,10 +34,10 @@ export default function About(){
         </div>
         <div className={styles.footer2}>
             <form className={styles.form}  onSubmit={handleSubmit}>
-                <input className={styles.name_form} type="name" maxLength="32" 
+                <input className={styles.name_form} placeholder="Enter your name" type="name" maxLength="32" 
                    onChange={(e) => setUsername({ ...username, name: e.target.value })} />
                 <br />
-                <input className={styles.email_form} type="email" 
+                <input className={styles.email_form} placeholder="Email address goes here!" type="email" 
                  onChange={(e) => setEmail({ ...email, email: e.target.value })}/>
                 <br />
                 <button type="submit" className={styles.button}>Send</button>

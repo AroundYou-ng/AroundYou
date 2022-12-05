@@ -21,7 +21,6 @@ export default function Header(){
           className={styles.logo}
         />
       </header>
-
       <nav className={styles.navigation}>
         <ul className={styles.navbar}>
           <Link className={styles.link} href="/">
