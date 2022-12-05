@@ -13,6 +13,7 @@
 .intro_h1, .intro_h2, .contactUs{
     display: flex;
     justify-content: center;
+    font-family: 'Work Sans', sans-serif;
     
 }
 
@@ -59,7 +60,7 @@
     border-radius: 4px;
     background-color: #f1e8df;
     color: #1d1d1d;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 34px;
     font-weight: 300;
 }
@@ -67,10 +68,13 @@
 
 .formGrid >  input::placeholder{
     text-align: center;
+    font-size: 9px;
 }
 
 .input5{
   height: 200px;
+  overflow: scroll;
+
 }
 
 .buttonSend{
@@ -107,6 +111,7 @@
 
 @media screen and (max-width: 900px) {
 
+
     .intro_h1, .intro_h2, .contactUs{
      display: flex;
      justify-content: center;
@@ -116,7 +121,8 @@
 
     .intro_h1{
         margin-top: 1em;
-        margin-left: 2em;
+        margin-left: 0.8em;
+        text-align: center;
     }
 
     .formGrid{

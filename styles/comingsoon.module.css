@@ -1,0 +1,13 @@
+
+
+
+
+@media (prefers-color-scheme: light){
+
+    .main{
+    color: rgb(0, 0, 0) !important;
+    background-image: url(../public/nnnoise.svg);
+  
+    }
+  }  
+  
