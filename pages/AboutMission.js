@@ -27,7 +27,7 @@ export default function AboutMission() {
         </span>
       </div>
       <div className={styles.contents_diagonal}>
-        <Image className={styles.star2} src={star} width={120} />
+        <Image className={styles.star2} src={star} width={120} alt="svg image" />
         <section className={styles.contents_diagonal1}>
           AroundYou is a community where we all discuss, identify, and find
           solutions to environmental and social issues. We're also interested in

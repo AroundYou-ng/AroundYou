@@ -6,7 +6,7 @@ import 'firebase/compat/auth'
 
 
 var firebaseConfig = {
-  apiKey: "AIzaSyAPwBLycNUaYgrpoCiUIDFbXdd27lEQ8yI",
+  apiKey: process.env.NEXT_FIREBASE_KEY,
   authDomain: "around-you-7818a.firebaseapp.com",
   projectId: "around-you-7818a",
   storageBucket: "around-you-7818a.appspot.com",
