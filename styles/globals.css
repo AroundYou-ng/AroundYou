@@ -17,7 +17,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: 'Space Grotesk', sans-serif;
-  background-image: url(../public/nnnoise.svg);
+  background-image: url(../public/nnnoise.png);
 }
 
 
@@ -28,7 +28,7 @@ body {
 
   *,html,body{
   color: rgb(158, 158, 158) !important;
-  background-image: url(../public/nnnoiseDark.svg);
+  background-image: url(../public/nnnoiseDark.png);
 
   }
 }  
