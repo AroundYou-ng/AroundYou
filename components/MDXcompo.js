@@ -7,7 +7,7 @@ const MDXcompo = {
     p: (props) => <p className={styles.p} {...props}/>,
     img: (props) => <img className={styles.imgBlog} {...props} />,
     ul: (props) => <ul className={styles.ul} {...props} />,
-    li: (props) => <li className={styles.li} style={{fill}} {...props} />
+    li: (props) => <li className={styles.li}  {...props} />
 }
 
 
