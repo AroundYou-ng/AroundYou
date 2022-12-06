@@ -1,4 +1,4 @@
-import Head from "next/head";
+import Head from "next/head"
 import Image from "next/image";
 import About from "../components/About.js";
 import TreePng from "../public/forest.webp";
