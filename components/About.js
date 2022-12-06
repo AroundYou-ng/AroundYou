@@ -3,7 +3,7 @@ import profilePic from "../public/images.png";
 import Image from "next/image";
 import Link from "next/link";
 import { collection, query, onSnapshot, orderBy } from "firebase/firestore";
-import { db } from "../pages/firebase";
+import { db } from "./firebase"
 import { v1 as uuidv1 } from "uuid";
 import { useState, useEffect } from "react";
 import swal from "sweetalert";

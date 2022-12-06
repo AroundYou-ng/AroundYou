@@ -5,7 +5,7 @@ import About from "../components/About";
 import Image from "next/image";
 import star from "../public/ssstar.svg";
 import { collection, addDoc, query, onSnapshot, orderBy } from "firebase/firestore";
-import {db} from '../pages/firebase';
+import {db} from '../components/firebase'
 import { v1 as uuidv1 } from "uuid";
 import { useState, useEffect } from "react";
 import swal from "sweetalert";
